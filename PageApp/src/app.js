@@ -136,7 +136,6 @@ let PostShow = {
     , after_render: async () => {
         document.getElementById("edit_submit_btn").addEventListener ("click",  async () => {
             if (login) {
-                alert(post.title)
                 content.innerHTML = '<section class="section">' +
                                         '<h1> Edit Post </h1>' +
                                         '<h2> Post Id : ' + post.id + '</h2>' +
