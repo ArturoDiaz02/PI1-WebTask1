@@ -1,14 +1,18 @@
 let About = {
     render : async () => {
-        let view =  /*html*/`
+        return `
             <section class="section">
                 <h1> About </h1>
             </section>
         `
-        return view
     },
-    after_render: async () => {}
-        
+    after_render: async () => {
+        document.getElementById("myBtn").addEventListener ("click",  () => {
+            console.log('Yo')
+            alert('Yo')
+        })
+    }
+
 }
 
 export default About;

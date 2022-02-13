@@ -1,6 +1,6 @@
 let Bottombar = {
     render: async () => {
-        let view =  /*html*/`
+        return `
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
@@ -9,7 +9,6 @@ let Bottombar = {
             </div>
         </footer>
         `
-        return view
     },
     after_render: async () => { }
 
