@@ -10,6 +10,11 @@ function home() {
     link.href = '#/about';
     link.innerText = 'About';
 
+    link.onclick = function(){
+        location.href = '#/about';
+        location.reload();
+    }
+
     div.innerHTML = '<h1>Home</h1>'
     div.appendChild(link);
 
@@ -20,13 +25,21 @@ function home() {
 function about() {
     let div = document.createElement('div');
     let link = document.createElement('a');
+
     link.href = '#/';
     link.innerText = 'Home';
+
+    link.onclick = function(){
+        location.href = '#/';
+        location.reload();
+
+    }
 
     div.innerHTML = '<h1>About</h1>';
     div.appendChild(link);
 
     app_div.appendChild(div);
+
 }
 
 function route (path, template) {
