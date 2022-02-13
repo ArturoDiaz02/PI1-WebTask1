@@ -1,4 +1,5 @@
 let getPostsList = async () => {
+
     const options = {
         method: 'GET',
         headers: {
@@ -6,8 +7,7 @@ let getPostsList = async () => {
         }
     };
     try {
-        const response = await fetch(`https://5bb634f6695f8d001496c082.mockapi.io/api/posts`, options)
-        // console.log(json)
+        const response = await fetch("./package.json", options)
         return await response.json()
     } catch (err) {
         console.log('Error getting documents', err)
